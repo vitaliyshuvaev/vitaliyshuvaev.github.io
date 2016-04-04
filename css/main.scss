@@ -51,3 +51,23 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+.header {
+  background-color: #336666;
+  margin-top: 4%;
+  height: 90px;
+}
+
+.btn-social-icon {
+  float: right !important;
+  color: #336666;
+  background-color: white;
+  margin: 2px;
+  margin-top: 30px;
+  padding: 1px 6px !important;
+  font-size: 18px !important;
+}
+
+.header-icon {
+  width: 100px;
+}
