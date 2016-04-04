@@ -93,6 +93,32 @@ $on-laptop:        800px;
   background-color: transparent !important;
 }
 
-li.active {
-  text-decoration: underline !important;
+.nav.navbar-nav {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.navbar-nav li {
+  float: none;
+  text-align: center;
+  background-color: white;
+  color: #333;
+  padding: 5px !important;
+}
+
+.navbar-nav li a {
+  float: none;
+  text-align: center;
+  background-color: white;
+  color: #333;
+}
+
+.navbar-nav li a:focus, a:hover {
+  background-color: #CDEDF7 !important;
+  color: #333 !important;
+  text-decoration: none !important;
+}
+
+nav {
+  padding: 0px !important;
 }
