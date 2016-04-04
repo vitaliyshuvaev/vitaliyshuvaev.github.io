@@ -71,3 +71,28 @@ $on-laptop:        800px;
 .header-icon {
   width: 100px;
 }
+
+.footer {
+  background-color: #336666;
+  height: 160px;
+}
+
+.footer-content {
+  color: white;
+  margin-top: 30px !important;
+}
+
+.footer-nav a {
+  color: white;
+  padding: 0px !important;
+}
+
+.footer-nav a:focus, a:hover {
+  color: white !important;
+  text-decoration: underline !important;
+  background-color: transparent !important;
+}
+
+li.active {
+  text-decoration: underline !important;
+}
