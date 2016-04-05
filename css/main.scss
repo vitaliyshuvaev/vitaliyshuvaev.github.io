@@ -52,29 +52,50 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+body {
+  background: url(/images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .header {
-  background-color: #336666;
   margin-top: 4%;
-  height: 90px;
+}
+
+.header-image {
+  background-color: transparent;
+  position: absolute;
+  min-height: 77px;
+}
+
+.header-bg {
+  background-color: #1f5355;
+  height: 77px;
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+
+.header-label {
+  padding: 16px;
 }
 
 .btn-social-icon {
   float: right !important;
-  color: #336666;
+  color: #1f5355;
   background-color: white;
   margin: 2px;
   margin-top: 30px;
   padding: 1px 6px !important;
-  font-size: 18px !important;
-}
-
-.header-icon {
-  width: 100px;
+  font-size: 16px !important;
 }
 
 .footer {
-  background-color: #336666;
-  height: 160px;
+  background-color: #1f5355;
+  height: 154px;
+  bottom: 0px;
 }
 
 .footer-content {
@@ -87,27 +108,17 @@ $on-laptop:        800px;
   padding: 0px !important;
 }
 
-.footer-nav a:focus, a:hover {
-  color: white !important;
-  text-decoration: underline !important;
-  background-color: transparent !important;
-}
-
 .nav.navbar-nav {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .navbar-nav li {
-  float: none;
-  text-align: center;
-  background-color: white;
-  color: #333;
-  padding: 5px !important;
+  background-color: transparent;
+  padding: 10px !important;
 }
 
 .navbar-nav li a {
-  float: none;
   text-align: center;
   background-color: white;
   color: #333;
@@ -115,10 +126,4 @@ $on-laptop:        800px;
 
 .navbar-nav li a:focus, a:hover {
   background-color: #CDEDF7 !important;
-  color: #333 !important;
-  text-decoration: none !important;
-}
-
-nav {
-  padding: 0px !important;
 }
