@@ -110,11 +110,26 @@ body {
 
 .nav.navbar-nav {
   width: 100%;
+  margin: 0px;
 }
 
 .navbar-nav li {
   background-color: transparent;
   padding: 0px;
+}
+
+.navbar-default {
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
+.navbar-collapse {
+  padding: 0px !important;
+  border: 0px !important
+}
+
+.navbar-toggle {
+  background-color: white !important;
 }
 
 .padding-right {
@@ -131,11 +146,17 @@ nav {
   color: #333;
 }
 
-.navbar-nav li a:focus, a:hover {
+.navbar-nav a:hover {
   background-color: #CDEDF7 !important;
 }
 
-.index-image {
+.footer-nav a:hover {
+  background-color: transparent !important;
+  color: white;
+  text-decoration: underline !important;
+}
+
+.image {
   width: 100%;
 }
 
@@ -149,4 +170,16 @@ nav {
 
 .margin-bottom {
   margin-bottom: 30px;
+}
+
+.caption {
+  color: #61999b;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.services-button {
+  background-color: #61999b !important;
+  color: white !important;
+  border: 0px !important;
 }
