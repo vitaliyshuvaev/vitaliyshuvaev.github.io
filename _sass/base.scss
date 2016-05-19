@@ -316,7 +316,19 @@ table {
     }
   }
   .icon-facebook { color: #3b5998; }
-  .icon-twitter { color: #55acee; }
-  .icon-gplus { color: #dd4b39; }
-  .icon-linkedin { color: #0077b5; }
+}
+
+.rating {
+  float: left;
+  -webkit-margin-before: 1.33em;
+  -webkit-margin-after: 1.33em;
+}
+
+.rating > label {
+  float: right;
+  overflow: hidden;
+  font-size: 300%;
+  line-height: 1.2;
+  color: gold;
+  text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
 }
