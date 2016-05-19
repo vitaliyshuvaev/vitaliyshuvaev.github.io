@@ -1,14 +1,6 @@
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
 
-  .member {
-    width: 200px;
-    .member-img img {
-      height: 200px;
-      width: 200px;
-    }
-    &:hover h4 { font-size: 26px}
-  }
-  .container { width: 724px; }
+  .container { max-width: 767px; }
 
 }
 
@@ -26,15 +18,8 @@
     }
   }
 
-  .member {
-    width: 180px;
-    .member-img img {
-      height: 180px;
-      width: 180px;
-    }
-    &:hover h4 { font-size: 24px}
-  }
-
+  h3 { font-size: 10px; }
+  
   .grid_1,
   .grid_2,
   .grid_3,
@@ -48,7 +33,7 @@
   .grid_11,
   .grid_12,
   .container {
-    width: 420px;
+    max-width: 480px;
   }
 
 }
@@ -65,16 +50,7 @@
     }
   }
 
-  .member {
-    width: 100%;
-    .member-img img {
-      height: 300px;
-      width: 300px;
-    }
-    &:hover h4 { font-size: 36px}
-  }
-
-  h4 { font-size: 24px; }
+  h4, h3 { font-size: 10px; }
 
   .grid_1,
   .grid_2,
@@ -89,21 +65,13 @@
   .grid_11,
   .grid_12,
   .container {
-    width: 300px;
+    max-width: 380px;
   }
 }
 
 @media screen and (max-width : 320px) {
 
   .bordered:before, .bordered:after { display: none; }
-  .member {
-    width: 100%;
-    .member-img img {
-      height: 285px;
-      width: 285px;
-    }
-    &:hover { h4 { font-size: 36px;} }
-  }
 
   .grid_1,
   .grid_2,
@@ -118,7 +86,7 @@
   .grid_11,
   .grid_12,
   .container {
-    width: 285px;
+    max-width: 285px;
   }
 
 }
