@@ -1,6 +1,9 @@
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
 
   .container { max-width: 767px; }
+  .rating > label {
+    font-size: 250%;
+  }
 
 }
 
@@ -19,7 +22,7 @@
   }
 
   h3 { font-size: 10px; }
-  
+
   .grid_1,
   .grid_2,
   .grid_3,
@@ -34,6 +37,9 @@
   .grid_12,
   .container {
     max-width: 480px;
+  }
+  .rating > label {
+    font-size: 150%;
   }
 
 }
@@ -67,6 +73,9 @@
   .container {
     max-width: 380px;
   }
+  .rating > label {
+    font-size: 130%;
+  }
 }
 
 @media screen and (max-width : 320px) {
@@ -88,5 +97,7 @@
   .container {
     max-width: 285px;
   }
-
+  .rating > label {
+    font-size: 110%;
+  }
 }
