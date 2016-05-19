@@ -8,23 +8,28 @@ $(document).ready(function() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1023,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          slidesToShow: 4,
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 766,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 479,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 320,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
