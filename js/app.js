@@ -60,6 +60,8 @@ $(window).scroll(function() {
   }
 });
 
+smoothScroll.init();
+
 // Fonts
 WebFontConfig = {
   google: { families: [ 'Roboto+Condensed:400italic,700italic,400,700:latin' ] }
