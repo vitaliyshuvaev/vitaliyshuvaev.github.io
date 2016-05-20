@@ -41,19 +41,31 @@ body {
   }
 }
 
-.slick-slide {
-  padding: 5vh 2vh;
-}
-
 .slick-prev:before, .slick-next:before {
   color: $aqua;
 }
 
-.home-img {
-  margin-top: 10vh;
-  height: 50vh;
-  background: url(/images/home-img.png) no-repeat center center;
-  background-size: cover;
+.slider-text {
+  color: transparent !important;
+  margin: 0;
+}
+
+.slider-for {
+  padding-top: -5vh;
+  padding-bottom: 5vh;
+  img {
+    height: 55vh;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+  }
+}
+
+.slider-nav img {
+  height: 15vh;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
 }
 
 ::selection, ::-moz-selection { background: $aqua; color: $white; }
