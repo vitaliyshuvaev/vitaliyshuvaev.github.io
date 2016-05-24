@@ -40,13 +40,67 @@ layout: default
   </div>
 </section>
 
-{% include spliter.html slide="#home" %}
+{% include spliter.html slide='#home' %}
+
+<section id='works' class='slide'>
+  <div class='container clearfix'>
+    {% include slide.html slide=1 %}
+
+    <h2 class="work">
+      <span class='expand'>+</span>
+      Наша перша робота
+    </h2>
+    <div class="content">
+      <div class='gallery'>
+        <a href='/images/1.jpg'><img src='/images/1.jpg' /></a>
+        <a href='/images/2.jpg'><img src='/images/2.jpg' /></a>
+        <a href='/images/3.jpg'><img src='/images/3.jpg' /></a>
+        <a href='/images/4.jpg'><img src='/images/4.jpg' /></a>
+        <a href='/images/5.jpg'><img src='/images/5.jpg' /></a>
+        <a href='/images/6.jpg'><img src='/images/6.jpg' /></a>
+        <a href='/images/7.jpg'><img src='/images/7.jpg' /></a>
+        <a href='/images/aqua.jpg'><img src='/images/aqua.jpg' /></a>
+        <a href='/images/background.jpg'><img src='/images/background.jpg' /></a>
+        <a href='/images/header.png'><img src='/images/header.png' /></a>
+        <a href='/images/home-img.png'><img src='/images/home-img.png' /></a>
+        <a href='/images/icon.png'><img src='/images/icon.png' /></a>
+        <a href='/images/miha.png'><img src='/images/miha.png' /></a>
+        <a href='/images/shuvik.png'><img src='/images/shuvik.png' /></a>
+      </div>
+    </div>
+
+    <h2 class="work">
+      <span class='expand'>+</span>
+      Наша друга робота
+    </h2>
+    <div class="content">
+      <div class='gallery'>
+        <a href='/images/1.jpg' title='asdasd'><img src='/images/1.jpg' title='asdasd' /></a>
+        <a href='/images/2.jpg'><img src='/images/2.jpg' /></a>
+        <a href='/images/3.jpg'><img src='/images/3.jpg' /></a>
+        <a href='/images/4.jpg'><img src='/images/4.jpg' /></a>
+        <a href='/images/5.jpg'><img src='/images/5.jpg' /></a>
+        <a href='/images/6.jpg'><img src='/images/6.jpg' /></a>
+        <a href='/images/7.jpg'><img src='/images/7.jpg' /></a>
+        <a href='/images/aqua.jpg'><img src='/images/aqua.jpg' /></a>
+        <a href='/images/background.jpg'><img src='/images/background.jpg' /></a>
+        <a href='/images/header.png'><img src='/images/header.png' /></a>
+        <a href='/images/home-img.png'><img src='/images/home-img.png' /></a>
+        <a href='/images/icon.png'><img src='/images/icon.png' /></a>
+        <a href='/images/miha.png'><img src='/images/miha.png' /></a>
+        <a href='/images/shuvik.png'><img src='/images/shuvik.png' /></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include spliter.html slide='#works' %}
 
 <section id='reviews' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=1 %}
+    {% include slide.html slide=2 %}
     <div class='grid_3'>
-      <div class="rating">
+      <div class='rating'>
         <label>★★★★★</label>
       </div>
     </div>
@@ -55,7 +109,7 @@ layout: default
         <p>Рекомендую. В свій час коли я шукав підрядчика у мене було три критерії: юридичне оформлення, середні ціни і досвід. Новий Рівень задоволняв всі критерії і почали робити ремонт. Буквально через місяць стало очевидно, що з вибором я не помилився (а досвід я вже то маю з недобросовісними підрядчиками).</p>
         <p>Великим плюсом є наявність двох прорабів в компанії. Дуже ризиковано коли все залежить від однієї людини.</p>
         <p>Приємно спілкуватися з Михайлом. Незалежно від теми розмова завжди коротка і конструктивна.</p>
-        <p>Дуже вразило відношення Віталія до дрібниць. І це дуже позитивний знак, оскільки більшість підрядчиків покладаються лише на ефект "Вау" коли клієнт заходе в готову квартиру і не дуже хвилюються, що з часом всі дрібні косяки починають псувати враження від ремонту.</p>
+        <p>Дуже вразило відношення Віталія до дрібниць. І це дуже позитивний знак, оскільки більшість підрядчиків покладаються лише на ефект 'Вау' коли клієнт заходе в готову квартиру і не дуже хвилюються, що з часом всі дрібні косяки починають псувати враження від ремонту.</p>
         <p>
           Ще один важливий момент. Більшість підрядчиків, так як впринципі і людей, не схильні визнавати власних помилок. Це завжди переростає в конфлікт, недовіру і натягнуті відносини. Зло бере коли замовив дивана, а оббивка відрізняється від теї яку замовляв, а тим часом виконавці намагаються тебе переконати, що так і має бути.
           </br>
@@ -69,16 +123,16 @@ layout: default
       <h3>
         Корпань Євгеній
       </h3>
-      Генеральний директор ТОВ "Ектів Брідж"
+      Генеральний директор ТОВ 'Ектів Брідж'
     </div>
   </div>
 </section>
 
-{% include spliter.html slide="#reviews" %}
+{% include spliter.html slide='#reviews' %}
 
 <section id='contacts' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=2 %}
+    {% include slide.html slide=3 %}
     <div class='grid_3'>
       <img src='/images/shuvik.png'>
       <h3 class='caption'>
@@ -131,21 +185,21 @@ layout: default
   </div>
 </section>
 
-{% include spliter.html slide="#contacts" %}
+{% include spliter.html slide='#contacts' %}
 
 <section id='contactus' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=3 %}
+    {% include slide.html slide=4 %}
     <h4>Зв'язатися з нами</h4>
     <!-- Do not change the code! -->
-    <a id="foxyform_embed_link_22289" href="http://ru.foxyform.com/">foxyform</a>
-    <script type="text/javascript">
+    <a id='foxyform_embed_link_22289' href='http://ru.foxyform.com/'>foxyform</a>
+    <script type='text/javascript'>
       (function(d, t){
          var g = d.createElement(t),
              s = d.getElementsByTagName(t)[0];
-         g.src = "http://ru.foxyform.com/js.php?id=22289&sec_hash=63072510b50&width=350px";
+         g.src = 'http://ru.foxyform.com/js.php?id=22289&sec_hash=63072510b50&width=350px';
          s.parentNode.insertBefore(g, s);
-      }(document, "script"));
+      }(document, 'script'));
     </script>
     <!-- Do not change the code! -->
   </div>
@@ -158,6 +212,6 @@ layout: default
       <a class='link icon-vkontakte' href='https://www.vk.com' target='_blank'></a>
       <a class='link icon-twitter' href='https://twitter.com' target='_blank'></a>
     </div>
-    <div class='copyright'>© 2016 ТОВ "Новий Рівень"</div><a class='button icon-angle-double-up' href='#'></a>
+    <div class='copyright'>© 2016 ТОВ 'Новий Рівень'</div><a class='button icon-angle-double-up' href='#'></a>
   </div>
 </div>

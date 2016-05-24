@@ -89,3 +89,38 @@ $(function() {
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(wf, s);
 });
+
+// Gallery
+
+$(document).ready(function() {
+  $('.parent-container').magnificPopup({
+    delegate: 'a', // child items selector, by clicking on it popup will open
+    type: 'image'
+    // other options
+  });
+
+  $('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+  });
+});
+
+// collapse
+
+$(document).ready(function() {
+  $(".work").click(function () {
+    $work = $(this);
+    $content = $work.next();
+    $text = $work.find('.expand');
+    $content.slideToggle(500, function () {
+      $text.text(function () {
+        return $content.is(":visible") ? "-" : "+";
+      });
+    });
+  });
+});
