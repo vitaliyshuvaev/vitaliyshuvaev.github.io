@@ -17,7 +17,7 @@ menu, ol, ul {
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
 .main {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 body {
@@ -61,7 +61,7 @@ body {
   }
 }
 
-.slider-nav img {
+.slider-nav img, .works-slider img {
   height: 15vh;
   margin: 0 auto;
   margin-bottom: 7px;
@@ -263,9 +263,9 @@ ul.about-list li {
 .omega { margin-right: 0; }
 
 .container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
+  width: 90% !important;
+  max-width: 1000px !important;
+  margin: auto !important;
 }
 
 .clearfix:after {
@@ -349,4 +349,18 @@ table {
   height: 68px;
   position: absolute;
   margin-left: 5%;
+}
+
+.gallery {
+  img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.content {
+  display: none;
+  img {
+    margin: 10px;
+  }
 }
