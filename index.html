@@ -2,6 +2,49 @@
 layout: default
 ---
 
+<section id='main'>
+  <div class='bordered'>
+    <a class='button icon-down-open' href='#home'></a>
+  </div>
+</section>
+
+<div class='menu container' id='navigation'>
+  <img src='/images/icon.png' class='site-icon'></img>
+
+  <ul class='navigation' id='nav'>
+    <li>
+      <a class='nav-item icon-home' data-scroll href='#home'>
+        <span>Домашня</span>
+      </a>
+    </li>
+    <li>
+      <a class='nav-item icon-th-list' data-scroll href='#services'>
+        <span>Послуги</span>
+      </a>
+    </li>
+    <li>
+      <a class='nav-item icon-folder-open' data-scroll href='#works'>
+        <span>Роботи</span>
+      </a>
+    </li>
+    <li>
+      <a class='nav-item icon-book' data-scroll href='#reviews'>
+        <span>Відгуки</span>
+      </a>
+    </li>
+    <li>
+      <a class='nav-item icon-vcard' data-scroll href='#contacts'>
+        <span>Контакти</span>
+      </a>
+    </li>
+    <li>
+      <a class='nav-item icon-feather' data-scroll href='#contactus'>
+        <span>Зв'язатися з нами</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
 <section id='home' class='slide'>
   <div class='container clearfix'>
     {% include slide.html slide=0 %}
@@ -21,9 +64,26 @@ layout: default
 
 {% include spliter.html slide='#home' %}
 
-<section id='works' class='slide'>
+<section id='services' class='slide'>
   <div class='container clearfix'>
     {% include slide.html slide=1 %}
+    <div class='grid_12 omega'>
+      <ul class='services-list'>
+        {% for property in site.data.properties %}
+        <li>
+          {{ property.text }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% include spliter.html slide='#services' %}
+
+<section id='works' class='slide'>
+  <div class='container clearfix'>
+    {% include slide.html slide=2 %}
 
     <h2 class="work">
       <!--<span class='expand'>+</span>-->
@@ -94,7 +154,7 @@ layout: default
 
 <section id='reviews' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=2 %}
+    {% include slide.html slide=3 %}
     <div class='grid_3'>
       <div class='rating'>
         <label>★★★★★</label>
@@ -128,7 +188,7 @@ layout: default
 
 <section id='contacts' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=3 %}
+    {% include slide.html slide=4 %}
     <div class='grid_6'>
       <img src='/images/shuvik.png' style='width: 200px; display: block; margin: 0 auto;'>
       <h3 class='caption'>
@@ -157,7 +217,7 @@ layout: default
 
 
     <div class='grid_12 omega'>
-      <h2>
+      <h4>
         <p>
           Сучасній людині просто необхідні комфортні і затишні умови для
           проживання. У зв'язку з цим важливо виконати якісний ремонт квартири.
@@ -177,7 +237,7 @@ layout: default
           Ми завжди уважно прислухаємося до думки наших клієнтів і враховуємо їх
           побажання. Бездоганна якість ремонту – основа нашої роботи.
         </p>
-      </h2>
+      </h4>
     </div>
   </div>
 </section>
@@ -186,7 +246,7 @@ layout: default
 
 <section id='contactus' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=4 %}
+    {% include slide.html slide=5 %}
     <h4>Зв'язатися з нами</h4>
     <!-- Do not change the code! -->
     <a id='foxyform_embed_link_22289' href='http://ru.foxyform.com/'>foxyform</a>
