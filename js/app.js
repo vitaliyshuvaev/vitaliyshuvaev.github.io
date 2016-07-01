@@ -51,28 +51,48 @@ $(document).ready(function() {
 // Navigation
 
 var fixed = false;
+var body = document.body;
+var nav = document.getElementById('navigation');
+var menu = document.getElementById('nav');
+var slides = document.getElementsByClassName('slide');
 
-$(window).scroll(function() {
+if (menu) var links = menu.getElementsByTagName('li');
+if (nav) {
+  var position = nav.offsetTop;
+  window.onscroll = navigate;
+}
+
+function navigate(){
   var trigered = false;
-  for (i = 0; i < $('.slide').length; i++) {
-    $('#nav li')[i].classList.remove('active');
-    if ($('.slide')[i].offsetTop + $('.slide')[i].offsetHeight > window.scrollY + window.outerHeight * 0.3) {
+  for (i = 0; i < slides.length; i++) {
+    var slide = slides[i];
+    links[i].classList.remove('active');
+    if (slide.offsetTop + slide.offsetHeight > window.scrollY + window.outerHeight * 0.3) {
       if (!trigered) {
-        $('#nav li')[i].className = 'active';
-        history.replaceState({}, '', '#' + $('.slide')[i].id);
+        links[i].className = 'active';
+        history.replaceState({}, '', '#' + slide.id);
       }
       trigered = true;
     }
   }
 
-  if (window.scrollY || window.pageYOffset > $('#navigation').offsetTop && !fixed) {
+  var scrollY = window.scrollY || window.pageYOffset
+  if (scrollY > position && !fixed) {
     fixed = true;
-    $('#navigation').className = $('#navigation').className + ' fixed';
-  } else if (window.scrollY || window.pageYOffset <= $('#navigation').offsetTop && fixed) {
+    nav.className = nav.className + ' fixed';
+  } else if (scrollY <= position && fixed) {
     fixed = false;
-    $('#navigation').classList.remove('fixed');
+    nav.classList.remove('fixed');
   }
-});
+}
+
+function popup(event, e) {
+  event.preventDefault();
+  l = screen.width/2-300;
+  t = screen.height/2-165;
+  window.open(e.href, 'sharer','toolbar=0, status=0, left='+l+', top='+t+', width=600, height=330')
+  return false
+}
 
 smoothScroll.init();
 
@@ -94,14 +114,13 @@ $(function() {
 
 $(document).ready(function() {
   $('.parent-container').magnificPopup({
-    delegate: 'a', // child items selector, by clicking on it popup will open
+    delegate: 'a',
     type: 'image'
-    // other options
   });
 
-  $('.gallery').each(function() { // the containers for all your galleries
+  $('.gallery').each(function() {
     $(this).magnificPopup({
-        delegate: 'a', // the selector for gallery item
+        delegate: 'a',
         type: 'image',
         gallery: {
           enabled:true

@@ -1,11 +1,23 @@
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
 
+  ul.navigation {
+    text-align: right;
+    margin: 0;
+    li a {
+      padding: 16px 10px;
+      font-size: 16px;
+      span { font-size: 12px; }
+    }
+  }
   .container { max-width: 767px; }
   .rating > label {
     font-size: 250%;
   }
   .slider-for img {
     height: 50vh;
+  }
+  .site-icon {
+    height: 53px;
   }
 }
 
@@ -17,9 +29,9 @@
     text-align: right;
     margin: 0;
     li a {
-      padding: 12px 8px;
-      font-size: 14px;
-      span { font-size: 10px; }
+      padding: 10px 2px;
+      font-size: 12px;
+      span { font-size: 9px; }
     }
   }
   .slider-for img {
@@ -50,7 +62,7 @@
     height: 40vh;
   }
   .site-icon {
-    height: 47px;
+    height: 41px;
   }
 }
 
@@ -58,9 +70,9 @@
 
   .slide h1 { float: none; }
   ul.navigation {
-    text-align: center;
+    text-align: right;
     li a {
-      font-size: 28px;
+      font-size: 26px;
       padding: 8px;
       span { display: none; }
     }
@@ -90,7 +102,7 @@
     height: 30vh;
   }
   .site-icon {
-    height: 47px;
+    height: 42px;
   }
 }
 
