@@ -50,7 +50,7 @@ $(document).ready(function() {
 
 // Navigation
 
-var fixed = false;
+var fixed = true;
 var body = document.body;
 var nav = document.getElementById('navigation');
 var menu = document.getElementById('nav');
@@ -76,14 +76,14 @@ function navigate(){
     }
   }
 
-  var scrollY = window.scrollY || window.pageYOffset
-  if (scrollY > position && !fixed) {
-    fixed = true;
-    nav.className = nav.className + ' fixed';
-  } else if (scrollY <= position && fixed) {
-    fixed = false;
-    nav.classList.remove('fixed');
-  }
+  // var scrollY = window.scrollY || window.pageYOffset
+  // if (scrollY > position && !fixed) {
+  //   fixed = true;
+  //   nav.className = nav.className + ' fixed';
+  // } else if (scrollY <= position && fixed) {
+  //   fixed = false;
+  //   nav.classList.remove('fixed');
+  // }
 }
 
 function popup(event, e) {
