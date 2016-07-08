@@ -124,7 +124,7 @@ a:visited { color: $aqua; text-decoration: none; }
   padding: 10px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0px -1px rgba(0, 0, 0, 0.3);
-  width: 35%;
+  width: 30%;
 }
 
 .contact-info li { margin-right: 10px; font-size: 16px; }
@@ -173,7 +173,7 @@ a:visited { color: $aqua; text-decoration: none; }
 
 .menu {
   transition: .3s;
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-color: $white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
