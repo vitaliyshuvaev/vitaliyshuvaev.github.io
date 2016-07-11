@@ -75,15 +75,6 @@ function navigate(){
       trigered = true;
     }
   }
-
-  // var scrollY = window.scrollY || window.pageYOffset
-  // if (scrollY > position && !fixed) {
-  //   fixed = true;
-  //   nav.className = nav.className + ' fixed';
-  // } else if (scrollY <= position && fixed) {
-  //   fixed = false;
-  //   nav.classList.remove('fixed');
-  // }
 }
 
 function popup(event, e) {
