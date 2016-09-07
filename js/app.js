@@ -133,18 +133,3 @@ $(document).ready(function() {
     });
   });
 });
-
-// collapse
-
-$(document).ready(function() {
-  $(".work").click(function () {
-    $work = $(this);
-    $content = $work.next();
-    $text = $work.find('.expand');
-    $content.slideToggle(500, function () {
-      $text.text(function () {
-        return $content.is(":visible") ? "-" : "+";
-      });
-    });
-  });
-});
