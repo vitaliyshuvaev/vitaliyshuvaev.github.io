@@ -64,6 +64,9 @@
   .site-icon {
     height: 41px;
   }
+  .language-icon {
+    height: 16px;
+  }
 }
 
 @media screen and (max-width : 479px) {
@@ -72,7 +75,7 @@
   ul.navigation {
     text-align: right;
     li a {
-      font-size: 26px;
+      font-size: 22px;
       padding: 8px;
       span { display: none; }
     }
@@ -102,7 +105,10 @@
     height: 30vh;
   }
   .site-icon {
-    height: 42px;
+    height: 38px;
+  }
+  .language-icon {
+    height: 16px;
   }
 }
 
@@ -130,5 +136,8 @@
   }
   .slider-for img {
     height: 25vh;
+  }
+  .language-icon {
+    height: 16px;
   }
 }

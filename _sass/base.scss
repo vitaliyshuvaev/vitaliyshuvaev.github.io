@@ -62,7 +62,6 @@ body {
 }
 
 .slider-nav img, .works-slider img {
-  height: 15vh;
   margin: 0 auto;
   margin-bottom: 7px;
   box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
@@ -400,4 +399,12 @@ iframe {
   h2 {
     font-size: 14px;
   }
+}
+
+.language-icon {
+  height: 32px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 5px;
 }
