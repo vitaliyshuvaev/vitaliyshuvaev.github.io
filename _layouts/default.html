@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title>{% t page.title %}</title>
+    <title>{{ site.data[page.lang].title }}</title>
     <meta name='description' content='Ремонт квартир Черкаси.
     Мы пропонуємо такі послуги: розробка дизайн-проекту, ремонтно-оздоблювальні роботи,
     закупівля будівельних матеріалів, комплектація меблями, обладнанням.'>
@@ -30,47 +30,21 @@
       <div class='menu container' id='navigation'>
         <img src='/images/icon.png' class='site-icon' />
         <ul class='navigation' id='nav'>
+          {% for nav in site.data[page.lang].nav %}
           <li>
-            <a class='nav-item icon-home' href='#home'>
-              <span>{% t nav.home %}</span>
+            <a class='nav-item icon-{{ site.data.nav_icons[forloop.index].class }}' href='#{{ nav[0] }}'>
+              <span>{{ nav[1] }}</span>
             </a>
           </li>
-          <li>
-            <a class='nav-item icon-th-list' href='#services'>
-              <span>{% t nav.services %}</span>
-            </a>
-          </li>
-          <li>
-            <a class='nav-item icon-folder-open' href='#works'>
-              <span>{% t nav.works %}</span>
-            </a>
-          </li>
-          <li>
-            <a class='nav-item icon-book' href='#reviews'>
-              <span>{% t nav.reviews %}</span>
-            </a>
-          </li>
-          <li>
-            <a class='nav-item icon-vcard' href='#contacts'>
-              <span>{% t nav.contacts %}</span>
-            </a>
-          </li>
-          <li>
-            <a class='nav-item icon-feather' href='#contactus'>
-              <span>{% t nav.contactus %}</span>
-            </a>
-          </li>
+          {% endfor %}
         </ul>
       </div>
       {{ content }}
-    </div>
-    <div>
-      {% if site.lang == 'ru' %}
-        {% capture ua %}{{ site.baseurl_root }}ua{{ page.url }}{% endcapture %}
-        <a href='{{ ua }}'><img class='language-icon' src='/images/ua.png' /></a>
-      {% elsif site.lang == 'ua' %}
-        {% capture ru %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
-        <a href='{{ ru }}'><img class='language-icon' src='/images/ru.png' /></a>
+      
+      {% if page.lang == 'ru' %}
+        <a href='/ua'><img class='language-icon ' src='/images/ua.png' /></a>
+      {% elsif page.lang == 'ua' %}
+        <a href='/'><img class='language-icon' src='/images/ru.png' /></a>
       {% endif %}
     </div>
     <script src='/js/app.js'></script>
