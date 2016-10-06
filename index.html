@@ -1,6 +1,6 @@
 ---
 layout: default
-title: title
+lang: ru
 ---
 
 <section id='main'>
@@ -33,12 +33,12 @@ title: title
     {% include slide.html slide=1 %}
     <div class='grid_12 omega'>
       <div class='heading-description'>
-        {% t slides.services.description %}
+        {{ site.data[page.lang].slides.services.description }}
       </div>
       <ul class='services-list'>
-        {% for service in site.data.services %}
+        {% for service in site.data[page.lang].services %}
         <li>
-          {% t {{service.text}} %}
+          {{ service[1] }}
         </li>
         {% endfor %}
       </ul>
@@ -52,7 +52,7 @@ title: title
   <div class='container clearfix'>
     {% include slide.html slide=2 %}
 
-    <h2 class="work">{% t works.item-1 %}</h2>
+    <h2 class="work">{{ site.data[page.lang].works.item-1 }}</h2>
     <div class="content" style='display: block;'>
       <div class='gallery'>
         <a href='/images/our_work/studio/1.jpg'><img src='/images/our_work/studio/1_thumb.jpg' /></a>
@@ -63,7 +63,7 @@ title: title
       </div>
     </div>
 
-    <h2 class="work">{% t works.item-2 %}</h2>
+    <h2 class="work">{{ site.data[page.lang].works.item-2 }}</h2>
     <div class="content" style='display: block;'>
       <div class='gallery'>
         <a href='/images/our_work/kitchen/2.jpg'><img src='/images/our_work/kitchen/2_thumb.jpg' /></a>
@@ -75,14 +75,14 @@ title: title
       </div>
     </div>
 
-    <h2 class="work">{% t works.item-3 %}</h2>
+    <h2 class="work">{{ site.data[page.lang].works.item-3 }}</h2>
     <div class="content" style='display: block;'>
       <div class='gallery'>
         <a href='/images/our_work/guests_room/1.jpg'><img src='/images/our_work/guests_room/1_thumb.jpg' /></a>
         <a href='/images/our_work/guests_room/2.jpg'><img src='/images/our_work/guests_room/2_thumb.jpg' /></a>
     </div>
 
-    <h2 class="work">{% t works.item-4 %}</h2>
+    <h2 class="work">{{ site.data[page.lang].works.item-4 }}</h2>
     <div class="content" style='display: block;'>
       <div class='gallery'>
         <a href='/images/our_work/badroom/1.jpg'><img src='/images/our_work/badroom/1_thumb.jpg' /></a>
@@ -91,7 +91,7 @@ title: title
       </div>
     </div>
 
-    <h2 class="work">{% t works.item-5 %}</h2>
+    <h2 class="work">{{ site.data[page.lang].works.item-5 }}</h2>
     <div class="content" style='display: block;'>
       <div class='gallery'>
         <a href='/images/our_work/hallway/1.jpg'><img src='/images/our_work/hallway/1_thumb.jpg' /></a>
@@ -99,9 +99,9 @@ title: title
       </div>
     </div>
 
-    <h2 class="work">{% t works.item-6.title %}</h2>
+    <h2 class="work">{{ site.data[page.lang].works.item-6.title }}</h2>
     <div class='paragraph'>
-      <h2 class="work">{% t works.item-6.item-1 %}</h2>
+      <h2 class="work">{{ site.data[page.lang].works.item-6.item-1 }}</h2>
       <div class="content" style='display: block;'>
         <div class='gallery'>
           <a href='/images/design/project1/1.jpg'><img src='/images/design/project1/1_thumb.jpg' /></a>
@@ -115,7 +115,7 @@ title: title
       </div>
     </div>
     <div class='paragraph'>
-      <h2 class="work">{% t works.item-6.item-2 %}</h2>
+      <h2 class="work">{{ site.data[page.lang].works.item-6.item-2 }}</h2>
       <div class="content" style='display: block;'>
         <div class='gallery'>
           <a href='/images/design/project2/1.jpg'><img src='/images/design/project2/1_thumb.jpg' /></a>
@@ -205,9 +205,9 @@ title: title
 
     <div class='grid_12 omega'>
       <h4>
-        {% for contact in site.data.contacts %}
+        {% for contact in site.data[page.lang].contacts %}
         <p>
-          {% t {{contact.text}} %}
+          {{ contact[1] }}
         </p>
         {% endfor %}
       </h4>
@@ -220,7 +220,7 @@ title: title
 <section id='contactus' class='slide'>
   <div class='container clearfix'>
     {% include slide.html slide=5 %}
-    <h4>{% t nav.contactus %}</h4>
+    <h4>{{ site.data[page.lang].nav.contactus }}</h4>
     <div class='grid_12'>
       <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAlOCMHtqEPfhuXoCYp1f9jxxZJijrQ7_Y'></script><div style='overflow:hidden;height:400px;width:100%;'><div id='gmap_canvas' style='height:400px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/ru'>Встроенные MAPS</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=9c6ac26e6036eb3847d515ce8805cd820b1ba57a'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(49.44891,32.047334500000034),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.44891,32.047334500000034)});infowindow = new google.maps.InfoWindow({content:'<strong>Our place</strong><br>Gogolya 137<br> Cherkasy<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
     </div>
@@ -245,6 +245,6 @@ title: title
       <a class='link icon-vkontakte' href='https://new.vk.com/public124873389' target='_blank'></a>
       <a class='link icon-twitter' href='https://twitter.com/shuvaev8' target='_blank'></a>
     </div>
-    <div class='copyright'>{% t footer %}</div><a class='button icon-angle-double-up' href='#main'></a>
+    <div class='copyright'>{{ site.data[page.lang].footer }}</div><a class='button icon-angle-double-up' href='#main'></a>
   </div>
 </div>
