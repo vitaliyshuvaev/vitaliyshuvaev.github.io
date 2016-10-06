@@ -15,6 +15,4 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-multiple-languages-plugin
 languages: ['ru', 'ua']
