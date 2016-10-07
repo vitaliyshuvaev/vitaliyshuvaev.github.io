@@ -13,7 +13,7 @@
     ремонт квартир фото, ремонт не дорого, якісний ремонт квартир, дизайн-проекти,
     інтер`єр квартир'>
 
-    <link href='/../images/icon.png' rel='shortcut icon' type='image/png'>
+    <link href='/../images/icon-new.png' rel='shortcut icon' type='image/png'>
     <link rel='stylesheet' href='{{ '/bower_components/slick-carousel/slick/slick.css' | prepend: site.baseurl_root }}'>
     <link rel='stylesheet' href='{{ '/bower_components/slick-carousel/slick/slick-theme.css' | prepend: site.baseurl_root }}'>
     <link rel='stylesheet' href='{{ '/bower_components/magnific-popup/dist/magnific-popup.css' | prepend: site.baseurl_root }}'>
@@ -28,7 +28,7 @@
   <body>
     <div class='main container'>
       <div class='menu container' id='navigation'>
-        <img src='/images/icon.png' class='site-icon' />
+        <img src='/images/icon-new.png' class='site-icon' />
         <ul class='navigation' id='nav'>
           {% for nav in site.data[page.lang].nav %}
           <li>
@@ -40,7 +40,7 @@
         </ul>
       </div>
       {{ content }}
-      
+
       {% if page.lang == 'ru' %}
         <a href='/ua'><img class='language-icon ' src='/images/ua.png' /></a>
       {% elsif page.lang == 'ua' %}

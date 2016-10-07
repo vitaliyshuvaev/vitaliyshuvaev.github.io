@@ -3,17 +3,12 @@ layout: default
 lang: ru
 ---
 
-<section id='main'>
-  <div class='bordered'>
-    <a class='button icon-down-open' href='#home'></a>
-  </div>
-</section>
-
 <section id='home' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=0 %}
-
-    <h2 class='slider-text'>Slider as Nav For / sync</h2>
+    <div class='home-header'>
+      Виконати якісний ремонт вашого житла або створити авторський дизайн інтер’єру - основне завдання нашої компанії.
+      <hr />
+    </div>
 
     <div class='slider-for'>
       {% include carousel_data.html %}
@@ -30,7 +25,6 @@ lang: ru
 
 <section id='services' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=1 %}
     <div class='grid_12 omega'>
       <div class='heading-description'>
         {{ site.data[page.lang].slides.services.description }}
@@ -38,8 +32,11 @@ lang: ru
       <ul class='services-list'>
         {% for service in site.data[page.lang].services %}
         <li>
-          {{ service[1] }}
+          {{ service[1].title }}
         </li>
+        <div class='paragraph'>
+          {{ service[1].description }}
+        </div>
         {% endfor %}
       </ul>
     </div>
@@ -50,8 +47,6 @@ lang: ru
 
 <section id='works' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=2 %}
-
     <h2 class="work">{{ site.data[page.lang].works.item-1 }}</h2>
     <div class="content" style='display: block;'>
       <div class='gallery'>
@@ -133,7 +128,6 @@ lang: ru
 
 <section id='reviews' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=3 %}
     <div class='grid_3'>
       <div class='rating'>
         <label>★★★★★</label>
@@ -167,7 +161,6 @@ lang: ru
 
 <section id='contacts' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=4 %}
     <div class='grid_4'>
       <img src='/images/shuvik.png' style='width: 200px; display: block; margin: 0 auto;'>
       <h3 class='caption'>
@@ -219,7 +212,6 @@ lang: ru
 
 <section id='contactus' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=5 %}
     <h4>{{ site.data[page.lang].nav.contactus }}</h4>
     <div class='grid_12'>
       <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAlOCMHtqEPfhuXoCYp1f9jxxZJijrQ7_Y'></script><div style='overflow:hidden;height:400px;width:100%;'><div id='gmap_canvas' style='height:400px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/ru'>Встроенные MAPS</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=9c6ac26e6036eb3847d515ce8805cd820b1ba57a'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(49.44891,32.047334500000034),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.44891,32.047334500000034)});infowindow = new google.maps.InfoWindow({content:'<strong>Our place</strong><br>Gogolya 137<br> Cherkasy<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
