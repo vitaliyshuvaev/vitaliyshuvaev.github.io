@@ -1,0 +1,56 @@
+carousel:
+  - num: 1
+  - num: 2
+  - num: 3
+  - num: 4
+  - num: 5
+  - num: 6
+  - num: 7
+  - num: 8
+  - num: 9
+  - num: 10
+  - num: 11
+  - num: 12
+
+studio:
+  - num: 1
+  - num: 2
+  - num: 3
+  - num: 4
+  - num: 5
+
+kitchen:
+  - num: 1
+  - num: 2
+  - num: 3
+  - num: 4
+  - num: 5
+  - num: 6
+
+guests_room:
+  - num: 1
+  - num: 2
+
+badroom:
+  - num: 1
+  - num: 2
+  - num: 3
+
+hallway:
+  - num: 1
+  - num: 2
+
+project1:
+  - num: 1
+  - num: 2
+  - num: 3
+  - num: 4
+  - num: 5
+  - num: 6
+  - num: 7
+
+project2:
+  - num: 1
+  - num: 2
+  - num: 3
+  - num: 4
