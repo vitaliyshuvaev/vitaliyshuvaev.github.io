@@ -228,11 +228,9 @@ ul.navigation {
 @-webkit-keyframes animate-stripes { 100% { background-position: -100px 0px; } }
 @keyframes animate-stripes { 100% { background-position: -100px 0px; } }
 
-ul.services-list {
-  li {
-    font-size: 15px;
+.services-list {
+  h2, h3 {
     margin-top: 10px;
-    color: $black;
   }
 }
 
@@ -390,7 +388,7 @@ iframe {
   padding: 5px;
 }
 
-.home-header {
+.header {
   font-weight: 300;
   font-size: 29px;
   margin: 20px 0;
