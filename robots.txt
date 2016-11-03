@@ -1,2 +1,13 @@
 User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
+Allow: /images/
+Disallow: /js/
+Disallow: /css/
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /images/
+Disallow: /js/
+Disallow: /css/
+Host: novuy-riven.ck.ua
