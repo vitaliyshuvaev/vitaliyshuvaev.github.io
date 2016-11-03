@@ -6,10 +6,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <title>{{ site.data[page.lang].title }}</title>
-    <meta name='description' content='Ремонт квартир Черкаси.
-    Мы пропонуємо такі послуги: розробка дизайн-проекту, ремонтно-оздоблювальні роботи,
-    закупівля будівельних матеріалів, комплектація меблями, обладнанням.'>
-    <meta name='keywords' content='{{ site.data[page.lang].description }}'>
+    <meta name='description' content='{{ site.data[page.lang].description }}'>
+    <meta name='keywords' content='ремонт квартир черкаси, ремонт ванної кімнати, ремонт ванни, ремонт квартир фото, ремонт не дорого, якісний ремонт квартир, дизайн-проекти, інтер`єр квартир'>
     <meta property='og:title' content='{{ site.data[page.lang].og.title }}' />
     <meta property='og:image' content='/../images/icon-new.png' />
     <meta property='og:description' content='{{ site.data[page.lang].og.description }}' />
@@ -28,6 +26,7 @@
   </head>
 
   <body>
+    {% include google-tag-manager.html %}
     <div class='main container'>
       <div class='menu container' id='navigation'>
         <img src='/images/icon-new.png' class='site-icon' />
