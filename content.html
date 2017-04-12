@@ -152,23 +152,63 @@
 
     <h2 class='work'>{{ site.data[page.lang].works.item-6.title }}</h2>
     <div class='paragraph'>
-      <h3 class='work'>{{ site.data[page.lang].works.item-6.item-1 }}</h3>
-      <div class='content' style='display: block;'>
-        <div class='gallery'>
-          {% for project1 in site.data.loops.project1 %}
-          <a
-            title='{{ site.data[page.lang].works.item-6.item-1 }} - фото {{project1.num}}'
-            alt='{{ site.data[page.lang].works.item-6.title }} {{ site.data[page.lang].works.item-6.item-1 }} - фото {{project1.num}}'
-            href='/images/design/project1/{{project1.num}}.jpg'>
-            <img
-              title='{{ site.data[page.lang].works.item-6.item-1 }} - фото {{project1.num}}.{{project1.num}}'
-              alt='{{ site.data[page.lang].works.item-6.title }} {{ site.data[page.lang].works.item-6.item-1 }} - фото {{project1.num}}.{{project1.num}}'
-              src='/images/design/project1/{{project1.num}}_thumb.jpg'>
-          </a>
-          {% endfor %}
+      <h3 class='work'>{{ site.data[page.lang].works.item-6.item-1.title }}</h3>
+      <div class='paragraph'>
+
+        <h3 class='work'>{{ site.data[page.lang].works.item-6.item-1.sub-item-3 }}</h3>
+        <div class='content' style='display: block;'>
+          <div class='gallery'>
+            {% for project1 in site.data.loops.project1.studio %}
+            <a
+              title='{{ site.data[page.lang].works.item-6.item-1.sub-item-3 }} - фото {{project1.num}}'
+              alt='{{ site.data[page.lang].works.item-6.item-1.title }} {{ site.data[page.lang].works.item-6.item-1.sub-item-3 }} - фото {{project1.num}}'
+              href='/images/design/project1/studio/{{project1.num}}.jpg'>
+              <img
+                title='{{ site.data[page.lang].works.item-6.item-1.sub-item-3 }} - фото {{project1.num}}.{{project1.num}}'
+                alt='{{ site.data[page.lang].works.item-6.item-1.title }} {{ site.data[page.lang].works.item-6.item-1.sub-item-3 }} - фото {{project1.num}}.{{project1.num}}'
+                src='/images/design/project1/studio/{{project1.num}}_thumb.jpg'>
+            </a>
+            {% endfor %}
+          </div>
         </div>
+
+        <h3 class='work'>{{ site.data[page.lang].works.item-6.item-1.sub-item-2 }}</h3>
+        <div class='content' style='display: block;'>
+          <div class='gallery'>
+            {% for project1 in site.data.loops.project1.childroom %}
+            <a
+              title='{{ site.data[page.lang].works.item-6.item-1.sub-item-2 }} - фото {{project1.num}}'
+              alt='{{ site.data[page.lang].works.item-6.item-1.title }} {{ site.data[page.lang].works.item-6.item-1.sub-item-2 }} - фото {{project1.num}}'
+              href='/images/design/project1/childroom/{{project1.num}}.jpg'>
+              <img
+                title='{{ site.data[page.lang].works.item-6.item-1.sub-item-1 }} - фото {{project1.num}}.{{project1.num}}'
+                alt='{{ site.data[page.lang].works.item-6.item-1.title }} {{ site.data[page.lang].works.item-6.item-1.sub-item-2 }} - фото {{project1.num}}.{{project1.num}}'
+                src='/images/design/project1/childroom/{{project1.num}}_thumb.jpg'>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+
+        <h3 class='work'>{{ site.data[page.lang].works.item-6.item-1.sub-item-1 }}</h3>
+        <div class='content' style='display: block;'>
+          <div class='gallery'>
+            {% for project1 in site.data.loops.project1.bathroom %}
+            <a
+              title='{{ site.data[page.lang].works.item-6.item-1.sub-item-1 }} - фото {{project1.num}}'
+              alt='{{ site.data[page.lang].works.item-6.item-1.title }} {{ site.data[page.lang].works.item-6.item-1.sub-item-1 }} - фото {{project1.num}}'
+              href='/images/design/project1/bathroom/{{project1.num}}.jpg'>
+              <img
+                title='{{ site.data[page.lang].works.item-6.item-1.sub-item-1 }} - фото {{project1.num}}.{{project1.num}}'
+                alt='{{ site.data[page.lang].works.item-6.item-1.title }} {{ site.data[page.lang].works.item-6.item-1.sub-item-1 }} - фото {{project1.num}}.{{project1.num}}'
+                src='/images/design/project1/bathroom/{{project1.num}}_thumb.jpg'>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+
       </div>
     </div>
+
     <div class='paragraph'>
       <h3 class='work'>{{ site.data[page.lang].works.item-6.item-2 }}</h3>
       <div class='content' style='display: block;'>
@@ -182,6 +222,25 @@
               title='{{ site.data[page.lang].works.item-6.item-2 }} - фото {{project2.num}}.{{project2.num}}'
               alt='{{ site.data[page.lang].works.item-6.title }} {{ site.data[page.lang].works.item-6.item-2 }} - фото {{project2.num}}.{{project2.num}}'
               src='/images/design/project2/{{project2.num}}_thumb.jpg'>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class='paragraph'>
+      <h3 class='work'>{{ site.data[page.lang].works.item-6.item-3 }}</h3>
+      <div class='content' style='display: block;'>
+        <div class='gallery'>
+          {% for project3 in site.data.loops.project3 %}
+          <a
+            title='{{ site.data[page.lang].works.item-6.item-3 }} - фото {{project3.num}}'
+            alt='{{ site.data[page.lang].works.item-6.title }} {{ site.data[page.lang].works.item-6.item-3 }} - фото {{project3.num}}'
+            href='/images/design/project3/{{project3.num}}.jpg'>
+            <img
+              title='{{ site.data[page.lang].works.item-6.item-3 }} - фото {{project3.num}}.{{project3.num}}'
+              alt='{{ site.data[page.lang].works.item-6.title }} {{ site.data[page.lang].works.item-6.item-3 }} - фото {{project3.num}}.{{project3.num}}'
+              src='/images/design/project3/{{project3.num}}_thumb.jpg'>
           </a>
           {% endfor %}
         </div>
